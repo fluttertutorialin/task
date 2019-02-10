@@ -58,7 +58,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
             Padding(
               padding: EdgeInsets.only(bottom: 20.0),
               child: Theme(
-                data: Theme.of(context).copyWith(accentColor: Color(0xFF951FF4)),
+                data: Theme.of(context).copyWith(accentColor: Colors.orange),
                 child: TabPageSelector(
                   controller: _tabController,
                 ),
@@ -92,7 +92,12 @@ class Page extends StatelessWidget {
       children: <Widget>[
         Text(
           title,
-          style: TextStyle(color: Colors.blueGrey[400], fontSize: 50.0, fontWeight: FontWeight.w500),
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 40.0,
+            color: Colors.orange,
+            fontFamily: "KoHo",
+          ),
           textAlign: TextAlign.center,
         ),
         SizedBox(
@@ -100,7 +105,11 @@ class Page extends StatelessWidget {
         ),
         Text(
           description,
-          style: TextStyle(color: Colors.blueGrey[300], fontSize: 20.0, fontWeight: FontWeight.w400),
+          style: TextStyle(
+            fontSize: 15.0,
+            color: Colors.black54,
+            fontFamily: "Regular",
+          ),
           textAlign: TextAlign.center,
         ),
         !last ? Container() : _buildButton(context),
@@ -119,7 +128,12 @@ class Page extends StatelessWidget {
         },
         child: Text(
           "GET STARTED",
-          style: TextStyle(color: Color(0xFF951FF4), fontSize: 20.0),
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 15.0,
+            color: Colors.orange,
+            fontFamily: "KoHo",
+          ),
         ),
       ),
     );
