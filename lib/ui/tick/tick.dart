@@ -35,7 +35,7 @@ class _TickState extends State<Tick> with SingleTickerProviderStateMixin {
           filter: ImageFilter.blur(sigmaX: 20.0, sigmaY: 20.0),
           child: Container(
             padding: EdgeInsets.all(20.0),
-            width: 200,
+            width: 300,
             height: 200,
             decoration: ShapeDecoration(
               shape: RoundedRectangleBorder(
@@ -58,7 +58,7 @@ class _TickState extends State<Tick> with SingleTickerProviderStateMixin {
                   "Added Successfully",
                   style: TextStyle(
                     color: Colors.blueGrey[600],
-                    fontSize: 20.0,
+                    fontSize: 15.0,
                     fontFamily: "KoHo",
                     fontWeight: FontWeight.bold,
                   ),

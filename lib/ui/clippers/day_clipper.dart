@@ -7,7 +7,7 @@ class DayClipper extends CustomClipper<Path> {
     path.lineTo(0, size.height - (size.height / 4));
 
     final end1 = Offset(size.width, 100);
-    final control1 = Offset(size.width / 4, size.height * 1.2);
+    final control1 = Offset(size.width / 7, size.height * 1.2);
 
     path.quadraticBezierTo(control1.dx, control1.dy, end1.dx, end1.dy);
     path.lineTo(size.width, 0);
