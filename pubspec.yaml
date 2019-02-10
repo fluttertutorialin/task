@@ -1,0 +1,66 @@
+name: task
+description: A new Flutter application.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# Read more about versioning at semver.org.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  sqflite: ^1.1.0
+  path: ^1.6.2
+  path_provider: ^0.5.0+1
+  rxdart: ^0.20.0
+  flutter_colorpicker: ^0.2.1
+  shared_preferences: ^0.5.1+1
+  polygon_clipper: ^1.0.1
+  flutter_svg: ^0.10.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.7.0
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/task.png
+    - assets/images/group.png
+    - assets/images/productive.png
+    - assets/images/beach.svg
+
+  fonts:
+    - family: Quicksand
+      fonts:
+        - asset: assets/fonts/quicksand_medium.ttf
+          style: normal
+        - asset: assets/fonts/quicksand_bold.otf
+          weight: 700
+
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/raleway_regular.ttf
+          style: normal
+
+    - family: KoHo
+      fonts:
+        - asset: assets/fonts/koho_regular.ttf
+          weight: 400
+        - asset: assets/fonts/koho_bold.ttf
+          weight: 700
